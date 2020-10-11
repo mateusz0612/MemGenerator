@@ -12,3 +12,55 @@ html {
 body {
     background-color: #275DAD;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    color: #CED3DC;
+}
+
+.main h1 {
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.description span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-weight: italic;
+    text-transform: uppercase;
+}
+
+.main label {
+    display: block;
+    padding-top: 10px;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.main input {
+    margin: 1vh 0;
+    width: 90vw;
+    line-height: 5vh;
+    outline: none;
+    border: 3px solid #5B616A;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
