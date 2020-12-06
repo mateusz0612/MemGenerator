@@ -7,60 +7,94 @@
 html {
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body {
-    background-color: #275DAD;
+    background-color: #FFF;
 }
 
-.flex-container {
+.flex-center-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flex-direction-column {
     flex-direction: column;
 }
 
-.main {
-    width: 100vw;
-    height: 100vh;
-    color: #CED3DC;
-}
-
-.main h1 {
-    font-size: 4rem;
+.navbar {
+    font-size: 1.5rem;
+    color: #242038;
     font-style: italic;
-    font-weight: bold;
+    margin-top: 15px;
 }
 
-.description {
+.navbar h1 {
+    margin-left: 20px;
+    font-size: 3rem;
+}
+
+.navbar img {
+    width: 64px;
+    height: 64px;
+}
+
+.describe {
+    margin-top: 15px;
     font-size: 2rem;
     text-align: center;
-    margin-top: 3vh;
 }
 
-.description span {
-    font-size: 2.5rem;
-    font-weight: 700;
-    font-weight: italic;
-    text-transform: uppercase;
-}
-
-.main label {
-    display: block;
-    padding-top: 10px;
-    font-size: 3rem;
-    font-weight: 700;
+.describe span {
+    font-weight: bold;
     font-style: italic;
 }
 
-.main input {
-    margin: 1vh 0;
-    width: 90vw;
-    line-height: 5vh;
-    outline: none;
-    border: 3px solid #5B616A;
-    border-radius: 10px;
-    padding: 10px;
+.recomended-memes {
     font-size: 1.5rem;
-    text-transform: uppercase;
+}
+
+.memes-container {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.memes-container img {
+    width: 70px;
+    height: 60px;
+    padding: 5px;
+}
+
+.meme-creator {
+    width: 90%;
+    margin: auto;
+}
+
+.meme-creator h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px 0px 5px 0px;
+}
+
+.meme-creator input {
+    width: 90%;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+.meme-creator img {
+    margin-top: 15px;
+    width: 100%;
+    height: 360px;
 }

@@ -12,16 +12,32 @@
 
 <body>
     <main>
-        <section class="flex-container main">
+        <nav class="navbar flex-center-center">
+            <img src="imgs/pepega.png" alt="Pepega">
             <h1>Meme Generator</h1>
-            <p class="description">Enter upper and lower text and click <span>Generate</span> button.</p>
-            <label for="upper-text">Upper Text:</label>
-            <input type="text" class="upper-text">
-            <label for="lower-text">Lower Text:</label>
-            <input type="text" class="lower-text">
-            <button class="generate-meme">Generate</button>
+        </nav>
+        <section class="describe flex-center-center">
+            <p class="describe_p">
+                Simple <span>Meme Generator</span>. Pick image create <span>meme!</span>
+            </p>
+        </section>
+        <section class="recomended-memes flex-center-center flex-direction-column describe">
+            <p>Here are some randomly choosed <span>Memes</span></p>
+            <div class="memes-container">
+            </div>
+        </section>
+        <section class="meme-creator">
+            <div class="meme-creator_inputs">
+                <h2>Text 0</h2>
+                <input type="text" class="meme-text-input">
+                <h2>Text 1</h2>
+                <input type="text" class="meme-text-input">
+            </div>
+            <button class="meme-creator_generate_button">Generate meme!</button>
+            <img src="" alt="" class="meme-field">
         </section>
     </main>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
