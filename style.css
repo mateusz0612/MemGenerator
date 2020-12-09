@@ -65,14 +65,17 @@ body {
 .memes-container {
     margin-top: 20px;
     padding: 10px;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border: 1px solid black;
 }
 
 .memes-container img {
-    width: 70px;
-    height: 60px;
+    width: 80px;
+    height: 70px;
     padding: 5px;
+}
+
+.memes-container img:hover{
+    cursor: pointer;
 }
 
 .meme-creator {
@@ -97,4 +100,8 @@ body {
     margin-top: 15px;
     width: 100%;
     height: 360px;
+}
+
+.meme-creator_generate_button{
+    margin: 10px 0px;
 }

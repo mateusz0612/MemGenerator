@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meme Generator</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <main>
-        <nav class="navbar flex-center-center">
-            <img src="imgs/pepega.png" alt="Pepega">
-            <h1>Meme Generator</h1>
-        </nav>
-        <section class="describe flex-center-center">
-            <p class="describe_p">
-                Simple <span>Meme Generator</span>. Pick image create <span>meme!</span>
-            </p>
-        </section>
-        <section class="recomended-memes flex-center-center flex-direction-column describe">
-            <p>Here are some randomly choosed <span>Memes</span></p>
-            <div class="memes-container">
-            </div>
-        </section>
-        <section class="meme-creator">
-            <div class="meme-creator_inputs">
-                <h2>Text 0</h2>
-                <input type="text" class="meme-text-input">
-                <h2>Text 1</h2>
-                <input type="text" class="meme-text-input">
-            </div>
-            <button class="meme-creator_generate_button">Generate meme!</button>
-            <img src="" alt="" class="meme-field">
-        </section>
+      <nav class="navbar flex-center-center">
+        <img src="imgs/pepega.png" alt="Pepega" />
+        <h1>Meme Generator</h1>
+      </nav>
+      <section class="describe flex-center-center">
+        <p class="describe_p">
+          Simple <span>Meme Generator</span>. Pick image create
+          <span>meme!</span>
+        </p>
+      </section>
+      <section
+        class="recomended-memes flex-center-center flex-direction-column describe"
+      >
+        <p>Here are some randomly choosed <span>Memes</span></p>
+        <div class="memes-container"></div>
+      </section>
+      <section class="meme-creator">
+        <div class="meme-creator_inputs">
+          <h2>Text 0</h2>
+          <input type="text" class="meme-text-input" />
+          <h2>Text 1</h2>
+          <input type="text" class="meme-text-input" />
+        </div>
+        <button class="meme-creator_generate_button">Generate meme!</button>
+      </section>
+      <section class="meme-image flex-center-center">
+        <img src="imgs/pepega.png" alt="" class="meme-field" />
+      </section>
     </main>
-    <script src="js/index.js"></script>
-</body>
-
+    <script type="module" src="js/index.js"></script>
+  </body>
 </html>
