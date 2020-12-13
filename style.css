@@ -65,7 +65,8 @@ body {
 .memes-container {
     margin-top: 20px;
     padding: 10px;
-    border: 1px solid black;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 .memes-container img {
