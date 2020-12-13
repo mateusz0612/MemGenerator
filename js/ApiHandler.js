@@ -8,6 +8,4 @@ export class ApiHandler {
     const data = await response.json();
     return data;
   }
-
-  async getMeme(params) {}
 }
