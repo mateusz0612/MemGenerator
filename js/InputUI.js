@@ -1,3 +1,5 @@
+import { Input } from "./Input.js";
+
 export class InputUI {
   constructor(boxCount, container) {
     this.boxCount = boxCount;
@@ -12,8 +14,8 @@ export class InputUI {
   adjustInputs() {
     this.clearContainer();
     for (let i = 0; i < this.boxCount; i++) {
-      const labelElement = document.createElement("h2");
-      const inputElement = document.createElement("input");
+      const labelElement = Input.createInputLabel();
+      const inputElement = Input.createInput();
       inputElement.classList.add("meme-text-input");
       labelElement.textContent = `Text ${i + 1}`;
       this.container.appendChild(labelElement);

@@ -15,6 +15,7 @@ export class Meme {
     imgElement.dataset.id = this.id;
     imgElement.addEventListener("click", () => {
       DOMelements.memeField.src = this.src;
+      DOMelements.memeField.dataset.id = this.id;
       const inputUI = new InputUI(this.boxCount, DOMelements.inputContainer);
       inputUI.adjustInputs();
     });
