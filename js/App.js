@@ -10,10 +10,20 @@ const init = async () => {
   const memeUi = new MemeUI(DOMelements.memesContainer, data);
   memeUi.displayMemes();
   const generateButton = new Button("Generete Meme!", async () => {
-    const boxes = [];
+    const params = [];
     Input.getInputsValue(".meme-text-input").forEach((e) => {
-      boxes.push({ text: e });
+      params.push(e);
     });
+    const formData = new FormData();
+    formData.append("username", "dennni");
+    formData.append("password", "kwasnejapko12");
+    formData.append("template_id", DOMelements.memeField.src);
+    params.forEach((e, index) => formData.append(`boxes[${index}][text]`, e));
+    const generateMemeApi = new ApiHandler(
+      "https://api.imgflip.com/caption_image"
+    );
+    const generatedMeme = await generateMemeApi.getData(formData);
+    console.log(generatedMeme);
   });
   DOMelements.generateBtnContainer.appendChild(
     generateButton.createButton("meme-creator_generate_button")

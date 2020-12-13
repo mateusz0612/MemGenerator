@@ -8,4 +8,13 @@ export class ApiHandler {
     const data = await response.json();
     return data;
   }
+
+  async getData(requestBody) {
+    const response = await fetch(this.api, {
+      method: "POST",
+      body: requestBody,
+    });
+    const data = await response.json();
+    return data;
+  }
 }
