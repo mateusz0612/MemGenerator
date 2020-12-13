@@ -2,8 +2,9 @@ import { DOMelements } from "./DOMelements.js";
 import { InputUI } from "./InputUI.js";
 
 export class Meme {
-  constructor(src, boxCount) {
+  constructor(src, id, boxCount) {
     this.src = src;
+    this.id = id;
     this.boxCount = boxCount;
   }
 
@@ -11,6 +12,7 @@ export class Meme {
     const imgElement = document.createElement("img");
     imgElement.src = this.src;
     imgElement.dataset.boxCount = this.boxCount;
+    imgElement.dataset.id = this.id;
     imgElement.addEventListener("click", () => {
       DOMelements.memeField.src = this.src;
       const inputUI = new InputUI(this.boxCount, DOMelements.inputContainer);
