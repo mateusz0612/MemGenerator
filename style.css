@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+@keyframes shake-move{
+    25%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
 html {
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
@@ -47,13 +62,13 @@ body {
     height: 64px;
 }
 
-.describe {
-    margin-top: 15px;
+.describe_p{
     font-size: 2rem;
     text-align: center;
+    margin-top: 15px;
 }
 
-.describe span {
+.describe_p span {
     font-weight: bold;
     font-style: italic;
 }
@@ -101,12 +116,28 @@ body {
     font-size: 1.5rem;
 }
 
+
 .meme-field {
     margin-top: 15px;
     width: 100%;
     height: 360px;
 }
 
+.meme-image{
+    margin-bottom: 20px;
+}
+
 .meme-creator_generate_button{
     margin: 10px 0px;
+    font-size: 2.5rem;
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.meme-creator_generate_button:hover{
+    cursor: pointer;
+    background-color: gray;
+    animation: shake-move 0.1s 3;
 }
