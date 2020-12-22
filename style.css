@@ -264,7 +264,6 @@ footer p {
     }
 
     .meme-creator {
-        margin-top: 5vh;
         margin: 5vh 0px 0px 2vw;
         float: left;
         width: 50%;
@@ -311,5 +310,20 @@ footer p {
         font-size: 3rem;
         font-style: italic;
         color: black;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .meme-creator {
+        margin: 5vh 0px 0px 5vw;
+        float: left;
+        width: 50%;
+    }
+
+    .meme-field {
+        margin-top: 15px;
+        width: 700px;
+        height: 680px;
     }
 }
