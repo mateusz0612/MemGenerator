@@ -2,4 +2,4 @@
 
 Vanilla JavaScript Meme Generator!
 
-See full deployment at **mateusz0612.github.io/MemGenerator/**
+**This side was bulit using GitHub Pages** [GitHub Pages](https://mateusz0612.github.io/MemGenerator/).
