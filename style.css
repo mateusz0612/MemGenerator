@@ -73,10 +73,6 @@ body {
     font-style: italic;
 }
 
-.recomended-memes {
-    font-size: 1.5rem;
-}
-
 .memes-container {
     margin-top: 20px;
     padding: 10px;
@@ -113,7 +109,10 @@ body {
 .meme-creator input {
     width: 90%;
     padding: 5px;
+    margin-top: 2px;
     font-size: 1.5rem;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
 
@@ -140,4 +139,88 @@ body {
     cursor: pointer;
     background-color: gray;
     animation: shake-move 0.1s 3;
+}
+
+footer {
+    line-height: 10vh;
+    width: 100vw;
+    text-align: center;
+    border-top: 1px solid gray;
+    padding: 5px;
+}
+
+footer p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: black;
+}
+
+@media only screen and (min-width: 600px) and (min-height: 1024px) {
+    .navbar h1 {
+        font-size: 6rem;
+    }
+    
+    .navbar img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .describe_p{
+        font-size: 3.5rem;
+        margin: 40px 0px 10px 0px;
+    }
+    
+    .memes-container img {
+        width: 350px;
+        height: 330px;
+        padding: 5px;
+        display: inline-block;
+    }
+
+    .memes-container {
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+    }
+
+    .meme-creator h2 {
+        font-size: 4.5rem;
+        padding: 10px 0px 5px 0px;
+    }
+    
+    .meme-creator input {
+        height: 6vh;
+        padding: 15px;
+        font-size: 3rem;
+        border: 2px solid gray;
+    }
+    
+    
+    .meme-field {
+        margin-top: 15px;
+        width: 100%;
+        height: 700px;
+    }
+    
+    .meme-image{
+        margin-bottom: 20px;
+    }
+    
+    .meme-creator_generate_button{
+        margin: 35px 0px 5px 0px;
+        font-size: 5rem;
+        padding: 20px;
+        border: 2px solid gray;
+    }
+
+    footer {
+        line-height: 5vh;
+        border-top: 2px solid gray;
+        padding: 30px;
+    }
+    
+    footer p {
+        font-size: 3rem;
+        font-style: italic;
+        color: black;
+    }
 }
